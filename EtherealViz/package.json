@@ -1,0 +1,17 @@
+{
+  "name": "ethereal_viz",
+  "version": "1.0.0",
+  "description": "Web-based Music Visualizer",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "author": "Rishabh Asthana {asthana4@illinois.edu}",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mocha": "^4.0.1"
+  }
+}

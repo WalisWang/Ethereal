@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Ethereal Viz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>      
+
+    <script src="js/Audio.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+    <script src="js/shaders/EffectComposer.js"></script>
+    <script src="js/shaders/CopyShader.js"></script>
+    <script src="js/shaders/RenderPass.js"></script>
+    <script src="js/shaders/ShaderPass.js"></script>
+    <script src="js/shaders/DigitalGlitch.js"></script>
+    <script src="js/shaders/GlitchPass.js"></script>
+    <script src="js/shaders/KaleidoShader.js"></script>
+    <script src="js/shaders/RGBShiftShader.js"></script>
+    <script src="js/shaders/FilmShader.js"></script>
+    <script src="js/shaders/DotScreenShader.js"></script>
+    
+</head>
+<body id="bodyTag">
+    <h3 class="heading" id="headingId">Ethereal Viz</h3>
+      <div id="slide-out" class="collection side-nav">
+        <h4 style="text-align: center;"class="collection-header">Playlist</h4>
+        <a id="test_song" class="waves-effect collection-item">Six Shooter</a>
+      </div>
+      <div id="spot-slide-out" class="collection side-nav">
+        <h4 style="text-align: center;"class="collection-header">Spotify Search</h4>
+          <input placeholder="Search.." id="search_field" type="text" class="validate" onchange=populateList(this.value)>
+          <div id="trackList"></div>
+      </div>
+    <a id="trig" href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a id="micTrig" href="#"><i class="material-icons">mic</i></a>
+    <a id="spotTrig" href="#" data-activates="spot-slide-out" class="button-collapse"><i class="material-icons">cloud</i></a>
+    <div class="footer visible" id="footerId">
+
+        <div id='player'>
+        <div class="sliderDiv seek">
+              <h5 class="time" id="currTime"> 0:00/0:00 </h5>
+              <input type="range" min="1" max="100" value="1" class="slider" id="seekSlider" step="0.01">    
+        </div>
+
+        <div class="row">
+        <div></div>
+        <div class="controls">
+            <div class="custom-btn">
+                <div><a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons" id="prevIcon">skip_previous</i></a></div>
+            </div>
+            <div class="custom-btn">
+                <div><a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons" id="playIcon">play_arrow</i></a></div>
+            </div>                 
+            <div class="custom-btn">
+                <div><a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons" id="nextIcon">skip_next</i></a></div>
+            </div>
+        </div>
+        <div class="volSliderDiv">
+            <div></div>
+            <h6 class="volSign">-</h6>
+            <input type="range" min="0" max="100" value="50" class="slider" id="volumeSlider">    
+            <h6 class="volSign">+</h6>
+            <div></div>
+            </div>
+            <div>
+        </div>
+        </div>
+        </div>
+
+        
+        <div style='display:flex;justify-content: center;'>
+            <a class="btn-floating btn-large waves-effect waves-light red" id="micDiv"><i class="material-icons" id="micIcon">mic_off</i></a>
+        </div>
+
+    </div>
+    <script src="js/visuals/Particles.js"></script>
+    <script src="js/visuals/Waveform.js"></script>
+    <script src="js/visuals/Waves.js"></script>
+    <script src="js/Render.js"></script>
+
+  
+</body>
+    
+</html>

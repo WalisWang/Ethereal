@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      className="ui inverted vertical center aligned segment"
+      style={
+        Object {
+          "backgroundImage": "url([object Object])",
+          "minHeight": 300,
+          "padding": "8px",
+        }
+      }
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="ui large inverted pointing secondary menu"
+        >
+          <a
+            className="active item"
+            onClick={[Function]}
+          >
+            PROFILE
+          </a>
+          <div
+            className="right item"
+            onClick={[Function]}
+          >
+            <a
+              className="ui inverted button"
+              disabled={undefined}
+              onClick={[Function]}
+              role="button"
+              tabIndex={undefined}
+            >
+              Log in
+            </a>
+            <a
+              className="ui inverted button"
+              disabled={undefined}
+              onClick={[Function]}
+              role="button"
+              style={
+                Object {
+                  "marginLeft": "0.5em",
+                }
+              }
+              tabIndex={undefined}
+            >
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui text container"
+      >
+        <h1
+          className="ui inverted header"
+          style={
+            Object {
+              "marginBottom": "1.0em",
+              "marginTop": "1.5em",
+            }
+          }
+        >
+          <img
+            alt={undefined}
+            className="ui circular image"
+            height={undefined}
+            id="profile_img"
+            left={true}
+            src={undefined}
+            width={undefined}
+          />
+           
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ui container"
+  >
+    <div
+      id="tab"
+    >
+      <div
+        className="ui pointing secondary ten item menu"
+      >
+        <a
+          className="active item"
+          onClick={[Function]}
+        >
+          Recommodation
+        </a>
+        <a
+          className="item"
+          onClick={[Function]}
+        >
+          Library
+        </a>
+      </div>
+      <div
+        className="ui segment active tab"
+        id="recommodation"
+      >
+         
+         
+      </div>
+    </div>
+  </div>
+</div>
+`;

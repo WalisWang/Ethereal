@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="Utils/mocha.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <script src="Utils/jquery.min.js"></script>
+  <script src="Utils/mocha.js"></script>
+  <script src="Utils/chai.min.js"></script>
+
+  <script>mocha.setup({ignoreLeaks: true, ui:'bdd', globals: ['*']})</script>
+  <script src="../public/js/Audio.js"></script>
+  <script src="test.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>
