@@ -7,5 +7,6 @@ Ethereal runs on node. To start the application, navigate to 'ethereal' director
 ```
 npm start
 ```
-Same applies for ethereal-viz. Just navigate to 'EtherealViz' directory and retype the same command
-This will start the server on port 8080
+
+# Manual Test 
+For screenshots and manual tests for the project, please check Ethereal/Manual_Test.pdf.
