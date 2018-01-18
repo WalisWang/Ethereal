@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProfilePage from './components/ProfilePage/ProfilePage';
 import PlayerPage from './components/PlayerPage/PlayerPage';
-import HomePage from './components/HomePage/HomePage';
+import HomePage from './components/HomePage/home';
 import SearchPage from './components/SearchPage/SearchPage';
 import ResultPage from './components/ResultPage/ResultPage';
 import LoginPage from './components/LoginPage/LoginPage';
